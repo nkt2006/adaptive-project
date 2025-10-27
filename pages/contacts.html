@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - StudentDev Portfolio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Абаляев Никита</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+
+                <div class="contacts__content">
+                    <!-- Contact Form -->
+                    <section class="contact-form">
+                        <h3 class="contact-info__title">Связаться со мной</h3>
+                        <form class="form">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Имя</label>
+                                <input type="text" id="name" class="form__input" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input type="email" id="email" class="form__input" placeholder="Ваш email" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="subject" class="form__label">Тема</label>
+                                <input type="text" id="subject" class="form__input" placeholder="Тема сообщения"
+                                    required>
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Сообщение</label>
+                                <textarea id="message" class="form__textarea" placeholder="Ваше сообщение..." rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="button button--primary form__button">Отправить
+                                сообщение</button>
+                        </form>
+                    </section>
+
+                    <!-- Contact Information -->
+                    <section class="contact-info">
+                        <h3 class="contact-info__title">Контактная информация</h3>
+                        <div class="contact-info__items">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📧</div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">Email</h4>
+                                    <p class="contact-item__value">abalyaev.n.d@edu.mirea.ru</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📱</div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">Телефон</h4>
+                                    <p class="contact-item__value">+7 (999) 123-45-67 (не мой номер)</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📍</div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">Адрес</h4>
+                                    <p class="contact-item__value">Проспект Вернадского</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">💼</div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">GitHub</h4>
+                                    <a href="https://github.com/nkt2006" target="_blank">
+                                        <p class="contact-item__value">nkt2006</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item__icon">💬</div>
+                                <div class="contact-item__content">
+                                    <h4 class="contact-item__title">Telegram</h4>
+                                    <p class="contact-item__value">nkt2006</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Availability -->
+                        <div class="availability">
+                            <h4 class="availability__title">Доступность</h4>
+                            <p class="availability__text">
+                                В настоящее время открыт для предложений по стажировке и сотрудничеству
+                                в области веб-разработки. Готов к удаленной работе.
+                            </p>
+                            <div class="availability__status">
+                                <span class="availability__dot"></span>
+                                <span class="availability__label">Доступен для проектов</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 StudentDev Portfolio</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">abalyaev.n.d@edu.mirea.ru</a>
+                        <a href="https://github.com" target="_blank" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

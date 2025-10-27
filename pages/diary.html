@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник - StudentDev Portfolio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Абаляев Никита</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <h2 class="section-title">Дневник прогресса</h2>
+
+                <!-- Timeline -->
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__date">27 октября 2025</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Завершил работу над портфолио</h3>
+                            <p class="timeline__description">
+                                Завершил разработку адаптивного сайта-портфолио. Реализовал все основные страницы: 
+                                главную, проекты, дневник и контакты. Проект полностью готов к размещению на хостинге.
+                            </p>
+                            <span class="timeline__status timeline__status--completed">Завершено</span>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="timeline__item">
+                        <div class="timeline__date">22 октября 2025</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Разработка Todo приложения</h3>
+                            <p class="timeline__description">
+                                Разработал приложение для управления задачами с использованием ванильного JavaScript. 
+                                Реализовал функции добавления, удаления, редактирования и фильтрации задач.
+                            </p>
+                            <span class="timeline__status timeline__status--completed">Завершено</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__date">18 октября 2025</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Изучение адаптивной верстки</h3>
+                            <p class="timeline__description">
+                                Освоил принципы адаптивной верстки, медиа-запросы, подход Mobile First. 
+                                Практиковался создании адаптивных макетов с использованием Flexbox и CSS Grid.
+                            </p>
+                            <span class="timeline__status timeline__status--completed">Завершено</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__date">15 октября 2025</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Работа над интернет-магазином</h3>
+                            <p class="timeline__description">
+                                Начал разработку прототипа интернет-магазина на React. 
+                                Планирую реализовать корзину товаров, фильтрацию и систему заказов.
+                            </p>
+                            <span class="timeline__status timeline__status--in-progress">В процессе</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__date">10 октября 2025</div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Изучение Node.js и Express</h3>
+                            <p class="timeline__description">
+                                Планирую начать изучение серверной разработки с Node.js и фреймворка Express. 
+                                Хочу создать полноценное full-stack приложение.
+                            </p>
+                            <span class="timeline__status timeline__status--planned">Запланировано</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses Section -->
+                <section class="courses">
+                    <h3 class="courses__title">Прогресс по курсам</h3>
+                    <div class="courses__grid">
+                        <div class="course">
+                            <div class="course__header">
+                                <span class="course__name">HTML/CSS для начинающих</span>
+                                <span class="course__percent">100%</span>
+                            </div>
+                            <div class="course__progress">
+                                <div class="course__progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course__header">
+                                <span class="course__name">JavaScript основы</span>
+                                <span class="course__percent">95%</span>
+                            </div>
+                            <div class="course__progress">
+                                <div class="course__progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course__header">
+                                <span class="course__name">React с нуля</span>
+                                <span class="course__percent">70%</span>
+                            </div>
+                            <div class="course__progress">
+                                <div class="course__progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course__header">
+                                <span class="course__name">Адаптивная верстка</span>
+                                <span class="course__percent">85%</span>
+                            </div>
+                            <div class="course__progress">
+                                <div class="course__progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Add Entry Form -->
+                <section class="add-entry">
+                    <h3 class="add-entry__title">Добавить запись в дневник</h3>
+                    <form class="add-entry__form">
+                        <div class="form-group">
+                            <label for="entry-date" class="form-label">Дата</label>
+                            <input type="date" id="entry-date" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="entry-title" class="form-label">Заголовок</label>
+                            <input type="text" id="entry-title" class="form-input" placeholder="Что вы сделали?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="entry-description" class="form-label">Описание</label>
+                            <textarea id="entry-description" class="form-textarea" placeholder="Подробное описание..." rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="entry-status" class="form-label">Статус</label>
+                            <select id="entry-status" class="form-input">
+                                <option value="planned">Запланировано</option>
+                                <option value="in-progress">В процессе</option>
+                                <option value="completed">Завершено</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="button button--primary">Добавить запись</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 StudentDev Portfolio</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">abalyaev.n.d@edu.mirea.ru</a>
+                        <a href="https://github.com" target="_blank" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
