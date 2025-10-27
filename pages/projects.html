@@ -56,8 +56,7 @@
                 <div class="projects__grid">
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="../images/project4.jpeg" class="project-card__image responsive-image"
-                                alt="Личный сайт">
+                            <img src="../images/project4.jpeg" class="responsive-image" alt="Личный сайт">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Личный сайт-портфолио</h3>
@@ -71,7 +70,7 @@
                                 <span class="tag">JavaScript</span>
                                 <span class="tag">Адаптивность</span>
                             </div>
-                            <button class="button button--primary project-card__button">
+                            <button class="button button--primary project-card__button" data-modal="modal1">
                                 Подробнее
                             </button>
                         </div>
@@ -79,8 +78,7 @@
 
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="../images/project5.jpeg" class="project-card__image responsive-image"
-                                alt="Todo приложение">
+                            <img src="../images/project5.jpeg" class="responsive-image" alt="Todo приложение">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Todo приложение</h3>
@@ -93,7 +91,7 @@
                                 <span class="tag">LocalStorage</span>
                                 <span class="tag">UI/UX</span>
                             </div>
-                            <button class="button button--primary project-card__button">
+                            <button class="button button--primary project-card__button" data-modal="modal2">
                                 Подробнее
                             </button>
                         </div>
@@ -101,8 +99,7 @@
 
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="../images/project6.jpeg" class="project-card__image responsive-image"
-                                alt="Интернет-магазин">
+                            <img src="../images/project6.jpeg" class="responsive-image" alt="Интернет-магазин">
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Интернет-магазин</h3>
@@ -115,7 +112,7 @@
                                 <span class="tag">API</span>
                                 <span class="tag">Redux</span>
                             </div>
-                            <button class="button button--primary project-card__button">
+                            <button class="button button--primary project-card__button" data-modal="modal3">
                                 Подробнее
                             </button>
                         </div>
@@ -137,6 +134,214 @@
             </div>
         </footer>
     </div>
+
+    <!-- Modal Windows -->
+    <!-- Modal 1: Личный сайт -->
+    <div id="modal1" class="modal" aria-hidden="true" aria-labelledby="modal1-title" role="dialog">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть модальное окно" data-close-modal>&times;</button>
+            <div class="modal__header">
+                <h2 id="modal1-title" class="modal__title">Личный сайт-портфолио</h2>
+            </div>
+            <div class="modal__body">
+                <div class="modal__image">
+                    <img src="../images/project4.jpeg" class="responsive-image" alt="Личный сайт">
+                </div>
+                <div class="modal__description">
+                    <p>Полнофункциональный адаптивный сайт-портфолио, разработанный с использованием современных
+                        веб-технологий.</p>
+                    <h3>Особенности:</h3>
+                    <ul>
+                        <li>Адаптивный дизайн для всех устройств</li>
+                        <li>Семантическая HTML5 разметка</li>
+                        <li>CSS3 с Flexbox и Grid</li>
+                        <li>Интерактивные элементы на JavaScript</li>
+                        <li>Оптимизация производительности</li>
+                    </ul>
+                    <h3>Технологии:</h3>
+                    <div class="modal__tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Flexbox</span>
+                        <span class="tag">Grid</span>
+                        <span class="tag">Адаптивный дизайн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a href="https://github.com/nkt2006/portfolio" target="_blank" class="button button--primary">Исходный
+                    код</a>
+                <button class="button button--outline" data-close-modal>Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Todo приложение -->
+    <div id="modal2" class="modal" aria-hidden="true" aria-labelledby="modal2-title" role="dialog">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть модальное окно" data-close-modal>&times;</button>
+            <div class="modal__header">
+                <h2 id="modal2-title" class="modal__title">Todo приложение</h2>
+            </div>
+            <div class="modal__body">
+                <div class="modal__image">
+                    <img src="../images/project5.jpeg" class="responsive-image" alt="Todo приложение">
+                </div>
+                <div class="modal__description">
+                    <p>Интуитивное приложение для управления задачами с современным пользовательским интерфейсом.</p>
+                    <h3>Функциональность:</h3>
+                    <ul>
+                        <li>Добавление, редактирование и удаление задач</li>
+                        <li>Фильтрация по статусу выполнения</li>
+                        <li>Поиск по задачам</li>
+                        <li>Локальное сохранение данных</li>
+                        <li>Drag & Drop сортировка</li>
+                    </ul>
+                    <h3>Технологии:</h3>
+                    <div class="modal__tags">
+                        <span class="tag">JavaScript ES6+</span>
+                        <span class="tag">LocalStorage</span>
+                        <span class="tag">CSS3 Анимации</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a href="https://github.com/nkt2006/todo-app" target="_blank" class="button button--primary">Исходный
+                    код</a>
+                <button class="button button--outline" data-close-modal>Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Интернет-магазин -->
+    <div id="modal3" class="modal" aria-hidden="true" aria-labelledby="modal3-title" role="dialog">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть модальное окно" data-close-modal>&times;</button>
+            <div class="modal__header">
+                <h2 id="modal3-title" class="modal__title">Интернет-магазин</h2>
+            </div>
+            <div class="modal__body">
+                <div class="modal__image">
+                    <img src="../images/project6.jpeg" class="responsive-image" alt="Интернет-магазин">
+                </div>
+                <div class="modal__description">
+                    <p>Прототип современного интернет-магазина с полным функционалом электронной коммерции.</p>
+                    <h3>Возможности:</h3>
+                    <ul>
+                        <li>Каталог товаров с фильтрацией</li>
+                        <li>Корзина покупок</li>
+                        <li>Система заказов</li>
+                        <li>Интеграция с внешним API</li>
+                        <li>Управление состоянием приложения</li>
+                    </ul>
+                    <h3>Технологии:</h3>
+                    <div class="modal__tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Redux</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">CSS Modules</span>
+                        <span class="tag">React Router</span>
+                        <span class="tag">Axios</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a href="https://github.com/nkt2006/ecommerce" target="_blank" class="button button--primary">Исходный
+                    код</a>
+                <button class="button button--outline" data-close-modal>Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const modalButtons = document.querySelectorAll('[data-modal]');
+            const modals = document.querySelectorAll('.modal');
+            const closeButtons = document.querySelectorAll('[data-close-modal]');
+
+            // Open modal
+            modalButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const modalId = this.getAttribute('data-modal');
+                    const modal = document.getElementById(modalId);
+
+                    if (modal) {
+                        modal.setAttribute('aria-hidden', 'false');
+                        modal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+
+                        // Focus management
+                        const firstFocusable = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                        if (firstFocusable) firstFocusable.focus();
+                    }
+                });
+            });
+
+            // Close modal
+            function closeModal(modal) {
+                modal.setAttribute('aria-hidden', 'true');
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const modal = this.closest('.modal');
+                    if (modal) closeModal(modal);
+                });
+            });
+
+            // Close on overlay click
+            modals.forEach(modal => {
+                modal.addEventListener('click', function (e) {
+                    if (e.target === this || e.target.hasAttribute('data-close-modal')) {
+                        closeModal(this);
+                    }
+                });
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    modals.forEach(modal => {
+                        if (modal.style.display === 'flex') {
+                            closeModal(modal);
+                        }
+                    });
+                }
+            });
+
+            // Focus trap inside modal
+            modals.forEach(modal => {
+                const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                modal.addEventListener('keydown', function (e) {
+                    if (e.key === 'Tab') {
+                        if (e.shiftKey) {
+                            if (document.activeElement === firstElement) {
+                                e.preventDefault();
+                                lastElement.focus();
+                            }
+                        } else {
+                            if (document.activeElement === lastElement) {
+                                e.preventDefault();
+                                firstElement.focus();
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
