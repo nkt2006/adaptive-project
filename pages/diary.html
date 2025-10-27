@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дневник - StudentDev Portfolio</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
     <div class="page">
+        <!-- Skip to main content for keyboard users -->
+        <a href="#main-content" class="skip-link" tabindex="0">Перейти к основному содержанию</a>
+
         <!-- Header -->
         <header class="header">
             <div class="container">
@@ -19,27 +24,28 @@
         </header>
 
         <!-- Navigation -->
-        <nav class="nav">
+        <nav class="nav" aria-label="Основная навигация">
             <div class="container">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Главная</a>
+                <ul class="nav__list" role="menubar">
+                    <li class="nav__item" role="none">
+                        <a href="../index.html" class="nav__link" role="menuitem" tabindex="0">Главная</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="projects.html" class="nav__link">Проекты</a>
+                    <li class="nav__item" role="none">
+                        <a href="projects.html" class="nav__link" role="menuitem" tabindex="0">Проекты</a>
                     </li>
-                    <li class="nav__item nav__item--active">
-                        <a href="diary.html" class="nav__link">Дневник</a>
+                    <li class="nav__item nav__item--active" role="none">
+                        <a href="diary.html" class="nav__link" role="menuitem" tabindex="0"
+                            aria-current="page">Дневник</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    <li class="nav__item" role="none">
+                        <a href="contacts.html" class="nav__link" role="menuitem" tabindex="0">Контакты</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <!-- Main Content -->
-        <main class="main">
+        <main class="main" id="main-content" tabindex="-1">
             <div class="container">
                 <h2 class="section-title">Дневник прогресса</h2>
 
@@ -50,21 +56,21 @@
                         <div class="timeline__content">
                             <h3 class="timeline__title">Завершил работу над портфолио</h3>
                             <p class="timeline__description">
-                                Завершил разработку адаптивного сайта-портфолио. Реализовал все основные страницы: 
+                                Завершил разработку адаптивного сайта-портфолио. Реализовал все основные страницы:
                                 главную, проекты, дневник и контакты. Проект полностью готов к размещению на хостинге.
                             </p>
                             <span class="timeline__status timeline__status--completed">Завершено</span>
                         </div>
                     </div>
 
-                   
+
 
                     <div class="timeline__item">
                         <div class="timeline__date">22 октября 2025</div>
                         <div class="timeline__content">
                             <h3 class="timeline__title">Разработка Todo приложения</h3>
                             <p class="timeline__description">
-                                Разработал приложение для управления задачами с использованием ванильного JavaScript. 
+                                Разработал приложение для управления задачами с использованием ванильного JavaScript.
                                 Реализовал функции добавления, удаления, редактирования и фильтрации задач.
                             </p>
                             <span class="timeline__status timeline__status--completed">Завершено</span>
@@ -76,7 +82,7 @@
                         <div class="timeline__content">
                             <h3 class="timeline__title">Изучение адаптивной верстки</h3>
                             <p class="timeline__description">
-                                Освоил принципы адаптивной верстки, медиа-запросы, подход Mobile First. 
+                                Освоил принципы адаптивной верстки, медиа-запросы, подход Mobile First.
                                 Практиковался создании адаптивных макетов с использованием Flexbox и CSS Grid.
                             </p>
                             <span class="timeline__status timeline__status--completed">Завершено</span>
@@ -88,7 +94,7 @@
                         <div class="timeline__content">
                             <h3 class="timeline__title">Работа над интернет-магазином</h3>
                             <p class="timeline__description">
-                                Начал разработку прототипа интернет-магазина на React. 
+                                Начал разработку прототипа интернет-магазина на React.
                                 Планирую реализовать корзину товаров, фильтрацию и систему заказов.
                             </p>
                             <span class="timeline__status timeline__status--in-progress">В процессе</span>
@@ -100,7 +106,7 @@
                         <div class="timeline__content">
                             <h3 class="timeline__title">Изучение Node.js и Express</h3>
                             <p class="timeline__description">
-                                Планирую начать изучение серверной разработки с Node.js и фреймворка Express. 
+                                Планирую начать изучение серверной разработки с Node.js и фреймворка Express.
                                 Хочу создать полноценное full-stack приложение.
                             </p>
                             <span class="timeline__status timeline__status--planned">Запланировано</span>
@@ -161,11 +167,13 @@
                         </div>
                         <div class="form-group">
                             <label for="entry-title" class="form-label">Заголовок</label>
-                            <input type="text" id="entry-title" class="form-input" placeholder="Что вы сделали?" required>
+                            <input type="text" id="entry-title" class="form-input" placeholder="Что вы сделали?"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="entry-description" class="form-label">Описание</label>
-                            <textarea id="entry-description" class="form-textarea" placeholder="Подробное описание..." rows="4"></textarea>
+                            <textarea id="entry-description" class="form-textarea" placeholder="Подробное описание..."
+                                rows="4"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="entry-status" class="form-label">Статус</label>
@@ -195,4 +203,5 @@
         </footer>
     </div>
 </body>
+
 </html>

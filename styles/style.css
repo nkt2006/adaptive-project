@@ -902,3 +902,194 @@ body {
 .project-card:hover .project-card__image .responsive-image {
     transform: scale(1.05);
 }
+
+
+/* Keyboard Navigation Focus Styles */
+.nav__link:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.button:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form__input:focus,
+.form__textarea:focus,
+.filter:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.theme-toggle:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.project-card:focus-within {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+    transform: translateY(-4px);
+}
+
+/* Skip to main content link for keyboard users */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    z-index: 1001;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 6px;
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Improved focus styles for all interactive elements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Remove default outline and use custom one */
+a:focus:not(.nav__link):not(.button):not(.footer__link),
+button:focus:not(.nav__link):not(.button):not(.theme-toggle),
+input:focus:not(.form-input):not(.form__input),
+textarea:focus:not(.form-textarea):not(.form__textarea) {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 1px;
+}
+
+/* Focus styles for footer links */
+.footer__link:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+    color: var(--text-white);
+}
+
+/* Focus styles for filter buttons */
+.filter:focus {
+    border-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.filter--active:focus {
+    background: var(--primary-color);
+    color: var(--text-white);
+    border-color: var(--primary-color);
+}
+
+/* Ensure theme toggle has good focus contrast */
+.theme-toggle:focus {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+
+/* Improved Keyboard Navigation */
+.nav__link {
+    position: relative;
+    outline: none;
+}
+
+.nav__link:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure nav items are focusable */
+.nav__item {
+    margin: 0;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    padding: var(--space-md) 0;
+}
+
+/* Remove any potential focus blocking */
+.nav {
+    background: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-md);
+}
+
+/* Enhanced focus styles for all interactive elements */
+button:focus,
+.button:focus,
+.form-input:focus,
+.form-textarea:focus,
+.form__input:focus,
+.form__textarea:focus,
+.filter:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.2);
+}
+
+/* Project card focus */
+.project-card:focus-within {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg), 0 0 0 3px var(--accent-color);
+}
+
+/* Skip link styles */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    z-index: 1001;
+    transition: top 0.3s ease;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    top: 6px;
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Remove default outline and use custom one */
+*:focus {
+    outline: none;
+}
+
+/* High contrast focus for accessibility */
+@media (prefers-contrast: high) {
+    .nav__link:focus {
+        outline: 3px solid #000;
+        background: #fff;
+        color: #000;
+    }
+}
